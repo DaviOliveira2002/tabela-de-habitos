@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #212F3C;
+    color: white;
+
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 48px 48px 20px;
+
+    position: fixed;
+    width: 100%;
+    background-color: #2C3E50;
+
+    border-bottom: 1px solid #717D7E;
+}
+
+button{
+    display: flex;
+
+    color: white;
+    background-color: transparent;
+    border: 1px solid #717D7E;
+    border-radius: 8px;
+
+    gap: 12px;
+    padding: 16px 24px;
+
+    align-items: center;
+
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+form{
+    display: flex;
+
+    padding: 182px 48px 48px;
+    width: fit-content;
+}
+
+
+.habits{
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    padding: 5px 0;
+
+    margin-top: 50px;
+}
+
+.habit{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 64px;
+
+    font-size: 32px;
+}
+
+.days{
+    display: flex;
+
+    margin-left: 32px;
+    gap: 48px;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.day div{
+    display: flex;
+
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    line-height: 125%;
+
+    text-align: center;
+
+    margin-bottom: 8px;
+
+    color: #A1A1AA;
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: #ABB2B9;
+
+    border: 2px solid #ABB2B9;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 64px;
+    height: 64px;
+}
+
+input:checked{
+    background: #58D68D ;
+    border: 2px solid #196F3D;
+}
+
+@media (max-width: 570px) {
+    button div{
+        display: none;
+    }
+}
